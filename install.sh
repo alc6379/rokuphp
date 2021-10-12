@@ -6,6 +6,7 @@ RED='\033[0;31m'
 YELLOW='\033[1;33m'
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
+export DEBIAN_FRONTEND=noninteractive
 
 if (( $EUID != 0 )); then
     echo -e "${RED}Please run as root: sudo ./install.sh${NC}"
