@@ -129,18 +129,18 @@ else
 fi
 
 echo -e "${GREEN}Restarting apache2${NC}"
-systemctl daemon-reload
+#systemctl daemon-reload
 service apache2 restart
 
 echo -e "${GREEN}Remove old files${NC}"
 rm html.tar.gz
 
-LOCALIP=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')
-echo ""
-echo -e "${YELLOW}---------------------${NC}"
-echo -e "${YELLOW}DONE INSTALLING!${NC}"
-echo -e "${YELLOW}---------------------${NC}"
-echo ""
-echo -e "${YELLOW}Now go to \"IP Camera Viewer Pro\" on Roku, and in settings, in the field PiIP enter: $LOCALIP${NC}"
-echo -e "${YELLOW}To configure your cameras, in your browser go to: http://$LOCALIP${NC}"
-
+#LOCALIP=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')
+# echo ""
+# echo -e "${YELLOW}---------------------${NC}"
+# echo -e "${YELLOW}DONE INSTALLING!${NC}"
+# echo -e "${YELLOW}---------------------${NC}"
+# echo ""
+# echo -e "${YELLOW}Now go to \"IP Camera Viewer Pro\" on Roku, and in settings, in the field PiIP enter: $LOCALIP${NC}"
+# echo -e "${YELLOW}To configure your cameras, in your browser go to: http://$LOCALIP${NC}"
+# 
